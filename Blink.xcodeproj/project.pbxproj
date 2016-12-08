@@ -319,6 +319,7 @@
 		07F6706E1D05EEE200C0A53C /* SSHCopyIDSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHCopyIDSession.m; sourceTree = "<group>"; };
 		07F6706F1D05EEE200C0A53C /* SSHSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHSession.h; sourceTree = "<group>"; };
 		07F670701D05EEE200C0A53C /* SSHSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHSession.m; sourceTree = "<group>"; };
+		6C13105C1DE2A8A900E87A1D /* Blink Hockey.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Blink Hockey.entitlements"; sourceTree = "<group>"; };
 		C94437551D8311960096F84E /* BKResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKResource.h; sourceTree = "<group>"; };
 		C94437561D8311960096F84E /* BKResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKResource.m; sourceTree = "<group>"; };
 		C944375F1D831CD30096F84E /* Themes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Themes; sourceTree = "<group>"; };
@@ -702,6 +703,7 @@
 		EA0BA1821C0CC57B00719C1A = {
 			isa = PBXGroup;
 			children = (
+				6C13105C1DE2A8A900E87A1D /* Blink Hockey.entitlements */,
 				C9B2E0031D6B612300B89F69 /* Settings */,
 				0732F04F1D062BB300AB5438 /* Frameworks */,
 				0732F0481D062B9A00AB5438 /* Resources */,
@@ -799,16 +801,22 @@
 				TargetAttributes = {
 					076FBE0B1DB80AC900F6D997 = {
 						DevelopmentTeam = HV2S48975V;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					EA0BA18A1C0CC57B00719C1A = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = HV2S48975V;
+						DevelopmentTeam = 6VFXYQ7NX2;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iCloud = {
 								enabled = 0;
@@ -817,6 +825,7 @@
 					};
 					EA0BA1A31C0CC57B00719C1A = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 6VFXYQ7NX2;
 						TestTargetID = EA0BA18A1C0CC57B00719C1A;
 					};
 				};
@@ -1274,10 +1283,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Blink/Blink.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6VFXYQ7NX2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1298,7 +1307,7 @@
 					"$(PROJECT_DIR)/Frameworks/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = Com.CarlosCabanero.BlinkShell;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapeli.dash.ios.fang;
 				PRODUCT_NAME = Blink;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1310,9 +1319,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Blink/Blink.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6VFXYQ7NX2;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1330,7 +1339,7 @@
 					"$(PROJECT_DIR)/Frameworks/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = Com.CarlosCabanero.BlinkShell;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kapeli.dash.ios.fang;
 				PRODUCT_NAME = Blink;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1341,6 +1350,7 @@
 		EA0BA1B11C0CC57C00719C1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 6VFXYQ7NX2;
 				INFOPLIST_FILE = BlinkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Carlos.BlinkUITests;
@@ -1353,6 +1363,7 @@
 		EA0BA1B21C0CC57C00719C1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 6VFXYQ7NX2;
 				INFOPLIST_FILE = BlinkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Carlos.BlinkUITests;
